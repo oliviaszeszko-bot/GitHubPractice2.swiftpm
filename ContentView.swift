@@ -6,18 +6,31 @@ struct ContentView: View {
     @State var answer = 0
     var body: some View {
         TextField("", value: $number1, format: .number)
-    
+        
         TextField("", value: $number2, format: .number)
         Button("Add") {
             answer = number1 + number2
         }
+        .font(.largeTitle)
+        .frame(width: 200, height: 70)
+        .background(Color.pink)
+        .foregroundStyle(.white)
         Button("subtract") {
             answer = number1 - number2
-        Button("Multiply") {
-            answer = number1 * number2
         }
+        .font(.largeTitle)
+        .frame(width: 200, height: 70)
+        .background(Color.pink)
+        .foregroundStyle(.white)
+            Button("Multiply") {
+                answer = number1 * number2
+            }
+            .font(.largeTitle)
+            .frame(width: 200, height: 70)
+            .background(Color.pink)
+            .foregroundStyle(.white)
             
-          Text("\(answer)")
+            Text("\(answer)")
+        }
     }
-}
 
