@@ -27,21 +27,21 @@ struct ContentView: View {
             }
             .font(.largeTitle)
             .frame(width: 200, height: 70)
-            .background(Color.pink)
+            .background(Color.yellow)
             .foregroundStyle(.white)
             Button("Multiply") {
                 answer = number1 * number2
             }
             .font(.largeTitle)
             .frame(width: 200, height: 70)
-            .background(Color.pink)
+            .background(Color.blue)
             .foregroundStyle(.white)
         Button("Divide") {
             answer = number1 / number2
         }
         .font(.largeTitle)
         .frame(width: 200, height: 70)
-        .background(Color.pink)
+        .background(Color.orange)
         .foregroundStyle(.white)
         Text("\(answer)")
         
