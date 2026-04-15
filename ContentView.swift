@@ -6,12 +6,15 @@ struct ContentView: View {
     @State var answer = 0
     var body: some View {
         Text("Enter number 1 here")
+            .foregroundStyle(.green)
         TextField("", value: $number1, format: .number)
-        
+            .font(.title2)
             .textFieldStyle(.roundedBorder)
             .foregroundStyle(.blue)
         Text("Enter number 2 here")
+            .foregroundStyle(.green)
         TextField("", value: $number2, format: .number)
+            .font(.title2)
             .foregroundStyle(.blue)
             .textFieldStyle(.roundedBorder)
         
@@ -43,8 +46,6 @@ struct ContentView: View {
         .frame(width: 200, height: 70)
         .background(Color.orange)
         .foregroundStyle(.white)
-        Text("\(answer)")
-        
         Button("Clear") {
         number1 = 0
         number2 = 0
@@ -54,7 +55,12 @@ struct ContentView: View {
         .frame(width: 200, height: 70)
         .background(Color.green)
         .foregroundStyle(.white)
+        Text("\(answer)")
+            .foregroundStyle(.red)
+            .font(.largeTitle)
+        
+        
         }
     }
-}
+
 
