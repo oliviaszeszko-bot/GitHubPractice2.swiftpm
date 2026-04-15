@@ -44,6 +44,16 @@ struct ContentView: View {
         .background(Color.pink)
         .foregroundStyle(.white)
         Text("\(answer)")
+        
+        Button("Clear") {
+        number1 = 0
+        number2 = 0
+        answer = 0
+          }
+        .font(.largeTitle)
+        .frame(width: 200, height: 70)
+        .background(Color.green)
+        .foregroundStyle(.white)
         }
     }
     
